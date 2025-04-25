@@ -9,7 +9,7 @@ const AdminContextProvider = (props) =>{
     const navigate = useNavigate();
 
     const [aToken, setAToken] = useState(localStorage.getItem('aToken') ? localStorage.getItem('aToken'):'');
-    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const backendUrl = "https://apointment-booking-backend.onrender.com";
     const [doctors, setDoctors] = useState([])
     const [appointments, setAppointments] = useState([]);
     const [dashBoardData, setDashBoardData] = useState(false);
