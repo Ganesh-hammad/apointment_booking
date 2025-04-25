@@ -9,7 +9,7 @@ export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL
+    const backendUrl = "https://apointment-booking-backend.onrender.com";
     const currencySymbol = "$";
     const navigate = useNavigate()
     const [doctors, setDoctors] = useState([])
